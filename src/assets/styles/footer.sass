@@ -1,0 +1,61 @@
+.footer
+	background: linear-gradient(90deg, #203f65, #16184c)
+	width: 100%
+	padding: 20px 0
+
+	&__wrap
+		display: flex
+		justify-content: flex-start
+		align-items: center
+
+	&__copy
+		color: rgba(255, 255, 255, 0.65)
+		font-weight: 300
+		font-size: 15px
+		margin: 0
+		flex-grow: 1
+
+	&__nav
+		list-style: none
+		padding: 0
+		margin: 0
+
+	&__nav-link
+		display: inline-block
+		font-size: 15px
+		margin: 0 18px
+
+		a
+			color: rgba(255, 255, 255, 0.65)
+			font-weight: 300
+
+@media (max-width: 991px)
+	.footer
+		&__nav-link
+			margin: 0 10px
+
+@media (max-width: 767px)
+	.footer
+		&__copy
+			font-size: 14px
+
+		&__nav-link
+			font-size: 14px
+			margin: 0 5px
+
+@media (max-width: 480px)
+	.footer
+		padding: 10px 0
+
+		&__wrap
+			flex-wrap: wrap
+
+		&__nav
+			order: -1
+			width: 100%
+			text-align: center
+			margin-bottom: 6px
+
+		&__copy
+			width: 100%
+			text-align: center

@@ -1,0 +1,61 @@
+.range
+	padding: 2px 12px 0
+	min-width: 56px
+	height: 48px
+	background: #fff
+	display: inline-block
+	vertical-align: middle
+	border: 1px solid #dbdbdb
+	text-align: center
+	color: #484848
+	margin-left: 10px
+
+	&__text
+		margin: 0
+		font-size: 12px
+
+	&__number
+		margin: 0
+		font-weight: 400
+		font-size: 19px
+		line-height: 1.2
+
+#app
+	.CalendarDay__selected,
+	.CalendarDay__selected:active,
+	.CalendarDay__selected:hover
+		background: #1367d7
+		border: 2px solid #1367d7
+
+	.CalendarDay__selected_span,
+	.CalendarDay__hovered_span
+		background: #eaf1fb
+		border: 2px solid #eaf1fb
+		color: #505050
+
+	.CalendarDay__default,
+	.CalendarDay__blocked_out_of_range,
+	.CalendarDay__blocked_out_of_range:active,
+	.CalendarDay__blocked_out_of_range:hover
+		border-color: transparent
+
+	.DayPicker_weekHeader
+		background: #f6f8fa
+
+	.DayPickerKeyboardShortcuts_show__bottomRight
+		display: none
+
+	.DateInput_input__focused
+		border-bottom-color: #1367d7
+
+	.DateInput_input
+		font-weight: 400
+
+@media (max-width: 767px)
+	#app
+		.DateInput
+			width: 114px
+
+		.DateInput_input,
+		.range__number
+			font-size: 17px
